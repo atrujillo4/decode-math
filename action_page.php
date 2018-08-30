@@ -1,7 +1,7 @@
 <?php
 
     function letterToNumber($letter){
-        $letterIntoAscii = ord($letter) - 97;
+        $letterIntoAscii = ord(strtolower($letter)) - 97;
         return $letterIntoAscii;
     }
     
