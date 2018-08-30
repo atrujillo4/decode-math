@@ -42,7 +42,7 @@
                     $num = $let - $bValue;
                     $number = $inverseOfaValue * $num;
                     $final = $number % 26;
-                    if ($final < 0){
+                    while ($final < 0){
                         $final = $final + 26;
                     }
                     $decodedLetter = numberToLetter($final);
